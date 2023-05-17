@@ -7,53 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/kat_ico.png">
     <title>Portifólio da Katarina</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
 </head>
 
 <body>
 
     <!-- Menu da Página -->
     <nav>
-        <div>
-            <img src="assets/images/katarina.jpeg" alt="Logo da página">
-            <span>Portifólio</span>
-        </div>
-
+    <div class="container-2">
+           
+        <a>
+            <h1 class="animacao"> <span class="titulo">Portifólio</span> </h1>
+        </a>
+        
         <!-- Opções de Menu utilizando marcadores em símbolos-->
-        <ul>
-
-            <a href="index.html">
+       <div>
+            <ul class="menu" id="menu">
+            <a class="hover-none" href="index.html">
                 <li>Home</li>
             </a>
-            <a href="#perfil">
+            <a class="hover-none" href="#perfil">
                 <li>Sobre</li>
             </a>
 
-            <a href="#video">
+            <a class="hover-none" href="#video">
                 <li>Video</li>
             </a>
-
-            <a href="curriculo.html">
+        
+            <a class="hover-none" href="curriculo.html">
                 <li>Curriculo</li>
             </a>
 
-            <a href="contatos.html">
+            <a class="hover-none" href="contatos.html">
                 <li>Contatos</li>
-            </a>
-
+            </a> 
+           
         </ul>
+        </div>
+    </div>
     </nav>
-
+    <hr>
     <!-- Conteudo da página -->
     <main>
-        <h1 id="perfil">Sobre a Katarina</h1>
-        <section>
+        <h1 class="center" id="perfil" >Sobre a Katarina</h1>
+        <div class="container">    
             <div>
                 <p>
                     Olá, tudo bem? Eu sou a Katarina e é um prazer te ter aqui!
                 </p>
                 <p>
                     Tenho 22 anos, moro em São Paulo com minhas duas gatinhas, Marta e Mariana. Amo sair com meus
-                    amigos, seja para viajar ou simplesmente sentar e bater um papo, amo viajar e tenho o sonho de fazer
+                    amigos, seja para lugares inusitados ou simplesmente sentar e bater um papo, amo viajar e tenho o sonho de fazer
                     uma viagem internacional.
                 </p>
                 <p>
@@ -61,46 +67,40 @@
                     responsável
                     por um dos melhores bootcamps do Brasil, e graças a essa oportunidade incrível estou desenvolvendo
                     meus
-                    conhecimentos em back-end e front-end, aprendendo JavaScript, CSS, HTML, Java, Spring boot, MySQL,
-                    git e github, além disso, durante todo bootcamp simulamos um ambiente de trabalho, então desenvolvi
-                    alguns projetos individuais e em equipe e aprendi a fazer entregas de qualidade utilizando o SCRUM.
+                    conhecimentos em back-end e front-end, em conjuntunto com as minhas habilidades comportamentais.
                     Em paralelo, também estou em processo de desenvolver meu inglês.
                 </p>
-                <p>
-                    Eu estou em transição de carreira, mas trabalhava em uma empresa de tecnologia em
-                    prevenção a fraude, e tive a oportunidade de desenvolver algumas habilidades, como comunicação,
-                    trabalho em equipe, proatividade, visão de processos orientados ao negócio e entre outras, graças a
-                    minha trajetória dentro da organização, que sempre foi de muito crescimento. E trago essas
-                    habilidades para minhas próximas experiências profissionais.
-                </p>
             </div>
-            <img src="assets/images/katarina.jpeg" alt="Olá, Tudo bem? Eu sou a Katarina!">
-        </section>
-        <h1 id="video">Vídeo:</h1>
-        <section>
-            <h2>Me conheça um pouco mais:</h2>
+            
+                <img class="foto2" src="assets/images/katarina.jpeg" alt="Olá, Tudo bem? Eu sou a Katarina!">
+            
+        </div>
+       
+        <h1 class="center" id="video">Meu Pitch:</h1>
+        <div class="container-3 mg-50">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/tL0gJNLUBDQ"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
+                allowfullscreen></iframe>  
+        </div>
     </main>
-
+    <hr>
     <!-- Rodapé da página -->
     <footer>
-        <a href="https://www.linkedin.com/in/katarina-pereira-freire-30080b181/" target="_blank">
-            <img src="assets/images/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/302kt" target="_blank">
-            <img src="assets/images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/k.pfreire/" target="_blank">
-            <img src="assets/images/instagram.png" alt="Instagram">
-        </a>
-        <p>Desenvolvido por: Katarina Freire - 2023 &copy;</p>
+        <div class="container-3">
+            <a href="https://www.linkedin.com/in/katarina-pereira-freire-30080b181/" target="_blank">
+                <img class="tm" src="assets/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/302kt" target="_blank">
+                <img class="tm" src="assets/images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/k.pfreire/" target="_blank">
+                <img class="tm" src="assets/images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p class="center" id="footer">Desenvolvido por: Katarina Freire - 2023 &copy;</p>
 
     </footer>
-
 </body>
 
 </html>

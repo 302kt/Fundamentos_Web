@@ -7,46 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/kat_ico.png">
     <title>Portifólio da Katarina</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-
-    <!-- Menu da Página -->
-    <nav>
-        <div>
-            <img src="assets/images/katarina.jpeg" alt="Logo da página">
-            <span>Portifólio</span>
+<!-- Menu da Página -->
+<nav>
+    <!-- Logo + Texto à esquerda do Menu -->
+    <div class="container-2">
+        <div class="animacao">    
+        <a>
+            <h1> <span class="titulo">Portifólio</span> </h1>
+        </a>
         </div>
-        
-        <ul>
-            <a href="index.html">
+    <!-- Opções do Menu utilizando lista não ordenada -->
+        <div>
+        <ul class="menu">
+            <a class="hover-none" href="index.html">
                 <li>Home</li>
-            </a>
-            <a href="curriculo.html">
+            </a>  
+            <a class="hover-none" href="curriculo.html">
                 <li>Curriculo</li>
             </a>
         </ul>
-    </nav>  
+    </div>
+</div>
+</nav>    
     
     <main>
-        <select>
-            <h2>Meu Currículo:</h2>
+            <h2 class="center" id="curriculo-font">Meu Currículo:</h2>
+            <div class="container-pdf mg-50">
             <iframe src="https://drive.google.com/file/d/1oH7nYDVTYDgQr7FlMGbNKE6PMpq8egO9/preview" width="640"
                 height="480" allow="autoplay"></iframe>
-        </select>
+            </div>
     </main>
-
+    <hr>
+    <!-- Rodapé da página -->
     <footer>
-        <a href="https://www.linkedin.com/in/katarina-pereira-freire-30080b181/" target="_blank">
-            <img src="assets/images/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/302kt" target="_blank">
-            <img src="assets/images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/k.pfreire/" target="_blank">
-            <img src="assets/images/instagram.png" alt="Instagram">
-        </a>
-        <p>Desenvolvido por: Katarina Freire - 2023 &copy;</p>
+        <div class="container-3">
+            <a href="https://www.linkedin.com/in/katarina-pereira-freire-30080b181/" target="_blank">
+                <img class="tm" src="assets/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/302kt" target="_blank">
+                <img class="tm" src="assets/images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/k.pfreire/" target="_blank">
+                <img class="tm" src="assets/images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p class="center" id="footer">Desenvolvido por: Katarina Freire - 2023 &copy;</p>
+
     </footer>
 
 </body>

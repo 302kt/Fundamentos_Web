@@ -6,79 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio da Katarina</title>
     <link rel="icon" type="image/png" href="assets/images/kat_ico.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Menu da Página -->
     <nav>
         <!-- Logo + Texto à esquerda do Menu -->
-        <div>
-            <img src="assets/images/katarina.jpeg" alt="Logo da página">
-            <span>Portifólio</span>
-        </div>
-
+        <div class="container-2">
+            <div class="animacao">    
+            <a>
+                <h1> <span class="titulo">Portifólio</span> </h1>
+            </a>
+            </div>
         <!-- Opções do Menu utilizando lista não ordenada -->
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="contatos.html">
-                <li>Contato</li>
-            </a>
-        </ul>
-    </nav>
-
+            <div>
+            <ul class="menu">
+                <a class="hover-none" href="index.html">
+                    <li>Home</li>
+                </a>    
+                    <a class="hover-none" href="contatos.html">
+                        <li>Contatos</li>
+                    </a> 
+                   
+            </ul>
+            </div>
+        </div>
+    </nav>        
     <!-- Conteúdo da Página -->
     <main>
-        <section>
-            <form>
-                <h2>Entre em contato comigo:</h2>
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Nome"> 
-                    <div id="txtNome"></div>
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="text" placeholder="E-mail"> 
-                    <div id="txtEmail"></div>
-                </div>
-                <div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" type="text" rows="8" placeholder="Mensagem"></textarea>
-                    <div id="txtMensagem"></div>
-                </div>
-                <button type="button">Enviar</button>
-            </form>
-            <form>
-                <h2>Informe seu endereço:</h2>
-                <div>
-                    <label for="cep">CEP:</label>
-                    <input id="cep" type="text" placeholder="CEP"> 
-                    <div id="txtCep"></div>
-                </div>
-                <button type="button">Consultar</button>
-                <hr>
-                <div>
-                    <label for="endereco">Endereço:</label>
-                    <textarea id="endereco" type="text" rows="8" placeholder="Endereço"></textarea>
-                    <div id="txtEndereco"></div>
-                </div>
-            </form>
-        </section>
+        <h2 class="center" id="ctt-font">Entre em contato comigo:</h2>
+    <div class="container-ctt mg-50">  
+        <form>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" placeholder="Nome"> 
+            <div id="txtNome"></div>
+                    
+            <label for="email">E-mail:</label>
+            <input id="email" type="text" placeholder="E-mail"> 
+            <div id="txtEmail"></div>
+                    
+            <label for="mensagem">Assunto:</label>
+            <textarea id="mensagem" type="text" rows="8" placeholder="Mensagem"></textarea>
+            <div id="txtMensagem"></div>
+                    
+            <button type="button">Enviar</button>            
+        </form>
+            <div class="ml">   
+                <p id="endereco">São Paulo/SP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.39578113315!2d-46.924970224858164!3d-23.68143454784927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1684282989128!5m2!1spt-BR!2sbr"
+                 width="300" height="200" style="border:0;" 
+                 allowfullscreen="" loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>      
+    </div>         
     </main>
-
-    <!-- Rodapé da Página -->
+    <hr>
+    <!-- Rodapé da página -->
     <footer>
-        <a href="https://www.linkedin.com/in/katarina-pereira-freire-30080b181/" target="_blank">
-            <img src="assets/images/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/302kt" target="_blank">
-            <img src="assets/images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/k.pfreire/" target="_blank">
-            <img src="assets/images/instagram.png" alt="Instagram">
-        </a>
-        <p>Desenvolvido por: Katarina Freire - 2023 &copy;</p>
+        <div class="container-3">
+            <a href="https://www.linkedin.com/in/katarina-pereira-freire-30080b181/" target="_blank">
+                <img class="tm" src="assets/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/302kt" target="_blank">
+                <img class="tm" src="assets/images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/k.pfreire/" target="_blank">
+                <img class="tm" src="assets/images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p class="center" id="footer">Desenvolvido por: Katarina Freire - 2023 &copy;</p>
+
     </footer>
 </body>
 </html>
